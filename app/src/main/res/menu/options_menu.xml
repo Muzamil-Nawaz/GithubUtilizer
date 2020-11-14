@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:title="Sort Results by Stars">
+        <menu>
+            <item
+                android:id="@+id/ascendingResult"
+                android:title="Ascending order">
+
+            </item>
+            <item
+                android:id="@+id/descendingResult"
+                android:title="Descending order">
+
+            </item>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/quit"
+        android:title="Quit"/>
+
+
+
+</menu>

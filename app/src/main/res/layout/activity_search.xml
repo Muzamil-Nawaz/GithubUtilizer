@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/logo"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Github Utilizer"
+        android:textColor="#BFABB4"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/language_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Language to search repositories for"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="#35AFE6"
+        app:boxStrokeColor="#FFB33E"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/keyword_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keyword to search in repositories"
+        android:layout_marginTop="15dp"
+        app:hintTextColor="#35AFE6"
+        app:boxStrokeColor="#FFB33E"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:padding="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="fetchResults"
+        android:text="Fetch results"
+        />
+</LinearLayout>
